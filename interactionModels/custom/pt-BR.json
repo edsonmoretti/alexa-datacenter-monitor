@@ -1,0 +1,82 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "gestão do datacenter",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "meu custo com aws",
+            "meu custo atual com nuvem",
+            "qual meu gasto atual com nuvem",
+            "qual meu gasto com nuvem",
+            "qual meu custo atual com nuvem",
+            "qual meu custo atual"
+          ]
+        },
+        {
+          "name": "LastStatusIntent",
+          "slots": [],
+          "samples": [
+            "aconteceu algo recentemente no datacenter",
+            "aconteceu algo recentemente no data center",
+            "aconteceu algo recentemente",
+            "aconteceu algo hoje a noite",
+            "quais são os problemas",
+            "quais problemas",
+            "quais as novidades do data center",
+            "você tem algo novo pra mim",
+            "tem algo novo pra mim",
+            "tivemos problemas recentes",
+            "como está o data center",
+            "como está o datacenter",
+            "quais são os últimos incidentes",
+            "quais são os últimos problemas",
+            "últimos incidentes",
+            "últimos problemas",
+            "ultimos problemas",
+            "ultimo status",
+            "qual ultimo status",
+            "qual ultimo status do datacenter"
+          ]
+        },
+        {
+          "name": "OpenTicketIntent",
+          "slots": [],
+          "samples": [
+            "sim por favor",
+            "sim desejo",
+            "abrir ticket para último incidente",
+            "abrir ticket para último problema",
+            "chamado para último incidente",
+            "chamado para último problema",
+            "chamado para ultimo incidente",
+            "chamado para ultimo problema",
+            "abrir chamado para ultimo incidente",
+            "sim",
+            "abrir chamado"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "25"
+}
