@@ -18,7 +18,7 @@ Este projeto ainda está em processo de desenvolvimento. O objetivo é apresenta
 
 A documentação segue o status de desenvolvimento do projeto, sendo construída de acordo com o padrão  [JSDoc](http://usejsdoc.org/).
 
-Para acessar a documentação do projeto, disponível neste repositório, utilize o endereço: [https://github.com/edsonmoretti/alexa-datacenter-monitor/lambda/docs](https://github.com/edsonmoretti/alexa-datacenter-monitor/lambda/docs)
+Para acessar a documentação do projeto, disponível neste repositório, utilize o endereço: [https://github.com/edsonmoretti/alexa-datacenter-monitor/tree/master/lambda/docs](https://github.com/edsonmoretti/alexa-datacenter-monitor/tree/master/lambda/docs)
 
 ## Testes
 
@@ -41,4 +41,4 @@ Projeto desenvolvido como parte dos requisitos para conclusão da pós em Cloud 
 
 ![Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)
 
-[Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://github.com/edsonmoretti/alexa-datacenter-monitor/LICENSE)
+[Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://github.com/edsonmoretti/alexa-datacenter-monitor/blob/master/LICENSE)

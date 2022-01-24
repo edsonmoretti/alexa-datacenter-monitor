@@ -82,7 +82,7 @@ e este projeto adere a [Semantic Versioning](http://semver.org/spec/v2.0.0.html)
     "ask-sdk-model": "^1.19.0",
     "aws-sdk": "^2.326.0"
   },
-  "description": "Projeto API Client desenvolvido como parte dos requisitos para conclusão da pós em Cloud da UPE",
+  "description": "Projeto desenvolvido como parte dos requisitos para conclusão da pós em Cloud da UPE",
   "devDependencies": {
     "jsdoc": "^3.6.9"
   },

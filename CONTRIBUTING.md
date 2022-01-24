@@ -2,7 +2,7 @@
 
 Obrigado por dedicar seu tempo para contribuir com o desenvolvimento deste projeto.
 
-Antes de começar, você deve ler com bastante atenção e concordar com toda a licença do projeto: [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://github.com/edsonmoretti/alexa-datacenter-monitor/LICENSE)
+Antes de começar, você deve ler com bastante atenção e concordar com toda a licença do projeto: [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://github.com/edsonmoretti/alexa-datacenter-monitor/blob/master/LICENSE)
 
 ## Conteúdo
 

@@ -3,7 +3,7 @@
  * 
  * @author Edson Moretti <edsonmoretti@gmail.com>
  * 
- * @license CC-BY-4.0 {@link https://github.com/edsonmoretti/alexa-datacenter-monitor/lambda/docs}
+ * @license CC-BY-4.0 {@link https://github.com/edsonmoretti/alexa-datacenter-monitor/blob/master/LICENSE}
  * 
  * @see
  * Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved.

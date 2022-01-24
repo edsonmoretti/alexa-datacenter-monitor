@@ -3,7 +3,7 @@
  * 
  * @author Edson Moretti <edsonmoretti@gmail.com>
  * 
- * @license CC-BY-4.0 {@link https://github.com/edsonmoretti/alexa-datacenter-monitor/lambda/docs}
+ * @license CC-BY-4.0 {@link https://github.com/edsonmoretti/alexa-datacenter-monitor/blob/master/LICENSE}
  * 
  * @see
  * This sample demonstrates handling intents from an Alexa skill using the Alexa Skills Kit SDK (v2).
