@@ -33,7 +33,7 @@ Ainda não foram determinadas as rotinas de teste para avaliação do projeto.
 Projeto desenvolvido como parte dos requisitos para conclusão da pós em Cloud da UPE em parceria com a [Companhia Pernambucana de Saneamento Compesa](https://www.compesa.com.br).
 ### Desenvolvedores
 
-- Edson Moretti <edsonmoretti@gmail.com> - <https://www.linkedin.com/in/edsonmoretti>
+- Edson Moretti <edsonmoretti@live.com> - <https://www.edsonmoretti.com.br>
 - João Ferreira <joaoferreirape@compesa.com.br> - <https://www.compesa.com.br>
 - Samuel Martins <samuelmastins@compesa.com.br> - <https://www.compesa.com.br>
 
