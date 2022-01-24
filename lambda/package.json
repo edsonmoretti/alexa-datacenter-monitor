@@ -1,16 +1,36 @@
 {
-  "name": "hello-world",
-  "version": "1.2.0",
-  "description": "alexa utility for quickly building skills",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Amazon Alexa",
-  "license": "Apache License",
+  "author": "Edson Moretti <edsonmoretti@gmail.com> (https://www.linkedin.com/in/edsonmoretti)",
+  "contributors": [
+    "João Ferreira <joaoferreirape@compesa.com.br> (https://www.compesa.com.br)",
+    "Samuel Martins <samuelmastins@compesa.com.br> (https://www.compesa.com.br)"
+  ],
+  "cpu": [
+    "x64"
+  ],
   "dependencies": {
     "ask-sdk-core": "^2.7.0",
     "ask-sdk-model": "^1.19.0",
     "aws-sdk": "^2.326.0"
-  }
+  },
+  "description": "Projeto desenvolvido como parte dos requisitos para conclusão da pós em Cloud da UPE",
+  "devDependencies": {
+    "jsdoc": "^3.6.9"
+  },
+  "homepage": "https://github.com/edsonmoretti/alexa-datacenter-monitor",
+  "license": "CC-BY-4.0",
+  "main": "index.js",
+  "man": [
+    "./docs"
+  ],
+  "name": "alexa-datacenter-monitor-skill",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edsonmoretti/alexa-datacenter-monitor"
+  },
+  "scripts": {
+    "docs": "jsdoc . --destination docs --encoding utf8",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.2.0"
 }
