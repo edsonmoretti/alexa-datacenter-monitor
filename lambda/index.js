@@ -1,7 +1,7 @@
 /**
  * @file index.js
  * 
- * @author Edson Moretti <edsonmoretti@gmail.com>
+ * @author Edson Moretti <edsonmoretti@live.com>
  * 
  * @license CC-BY-4.0 {@link https://github.com/edsonmoretti/alexa-datacenter-monitor/blob/master/LICENSE}
  * 
@@ -10,20 +10,13 @@
  * Please visit https://alexa.design/cookbook for additional examples on implementing slots, dialog management, session persistence, api calls, and more.
  */
 
-
-
-
-
 const ALEXA = require('ask-sdk-core');
 
 var http = require('http'); 
 var https = require('https'); // Necessida de implementação com certificado .pem
-var key = 'df1e3de6-63bc-11e4-bc2b-4198b6150d5c'; // Substituir pela chave da api AWS
-var telephoneThatWillSend = '5581912345678'; // Substituir pelo telefone que irá enviar
-var apiUrlWaSend = 'contoso.example.net'; // Nome dns ou ip para api
-
-
-
+var key = 'ff1e35e6-63bc-11e4-bc2b-4198b6150d5c'; // Substituir pela chave da api central (https://github.com/edsonmoretti/api-whatsapp-send)
+var telephoneThatWillSend = '5581988887777'; // Substituir pelo telefone que irá enviar
+var apiUrlWaSend = 'contoso.example.net'; // Nome dns ou ip para api central
 
 
 const LaunchRequestHandler = {
@@ -57,10 +50,9 @@ const LaunchRequestHandler = {
             cortesia = "Boa noite";
         }
 
-        let speakOutput = "Olá Edson, " + cortesia + ". O que você deseja?";
+        let speakOutput = "Olá, " + cortesia + ". O que você deseja?";
 
-        // const response = await sendMessageToWhatsApp("81982001303", "Teste");
-
+        
         return handlerInput.responseBuilder
             .speak(speakOutput)
             .reprompt("Não entendi, tente dizer, por exemplo, último status.")
@@ -70,15 +62,9 @@ const LaunchRequestHandler = {
 
 };
 
-
-
-
-
 const HelloWorldIntentHandler = {
     canHandle(handlerInput) {
-
         return ALEXA.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest' && ALEXA.getIntentName(handlerInput.requestEnvelope) === 'HelloWorldIntent';
-
     },
     /**
      * 
@@ -87,7 +73,6 @@ const HelloWorldIntentHandler = {
      * @returns {}
      */
     async handle(handlerInput) {
-        //const response = await httpPost(apiUrlDatacenterInfo, '/api/datacenterinfo/last');
         let speakOutput = 'oi';
         let response = await datacenterInfo("aws/cost");
 
@@ -113,15 +98,9 @@ const HelloWorldIntentHandler = {
 
 };
 
-
-
-
-
 const LastStatusIntentHandler = {
     canHandle(handlerInput) {
-
         return ALEXA.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest' && ALEXA.getIntentName(handlerInput.requestEnvelope) === 'LastStatusIntent';
-
     },
     /**
      * 
@@ -130,7 +109,6 @@ const LastStatusIntentHandler = {
      * @returns {}
      */
     async handle(handlerInput) {
-        //const response = await httpPost(apiUrlDatacenterInfo, '/api/datacenterinfo/last');
         let speakOutput = 'oi';
         let response = await datacenterInfo("last");
 
@@ -156,10 +134,6 @@ const LastStatusIntentHandler = {
 
 };
 
-
-
-
-
 /**
  * @description datacenterInfo
  * @param {*} command 
@@ -172,10 +146,6 @@ function datacenterInfo(command) {
     return response;
 
 }
-
-
-
-
 
 /**
  * @description sendMessageToWhatsApp
@@ -190,10 +160,6 @@ function sendMessageToWhatsApp(telephone, message) {
     return response;
 
 }
-
-
-
-
 
 /**
  * @description httpPost
@@ -231,10 +197,6 @@ function httpPost(url, route) {
 
 }
 
-
-
-
-
 const OpenTicketIntentHandler = {
     canHandle(handlerInput) {
 
@@ -265,13 +227,8 @@ const OpenTicketIntentHandler = {
 
 };
 
-
-
-
-
 const HelpIntentHandler = {
     canHandle(handlerInput) {
-
         return ALEXA.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest' && ALEXA.getIntentName(handlerInput.requestEnvelope) === 'AMAZON.HelpIntent';
 
     },
@@ -292,10 +249,6 @@ const HelpIntentHandler = {
     }
 
 };
-
-
-
-
 
 const CancelAndStopIntentHandler = {
     canHandle(handlerInput) {
@@ -319,10 +272,6 @@ const CancelAndStopIntentHandler = {
     }
 
 };
-
-
-
-
 
 /**
  * 
@@ -355,10 +304,6 @@ const FallbackIntentHandler = {
 
 };
 
-
-
-
-
 /**
  * 
  * @see
@@ -388,10 +333,6 @@ const SessionEndedRequestHandler = {
 
 };
 
-
-
-
-
 /**
  * 
  * @see
@@ -415,6 +356,7 @@ const IntentReflectorHandler = {
             .getResponse();
     }
 };
+
 /**
  * Generic error handling to capture any syntax or routing errors. If you receive an error
  * stating the request handler chain is not found, you have not implemented a handler for
@@ -442,10 +384,6 @@ const ErrorHandler = {
     }
 
 };
-
-
-
-
 
 /**
  * 
